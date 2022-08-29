@@ -1,19 +1,18 @@
 Program Algebraa;
 
-function Calcular(a,b,c,d,e,f : integer ):real
- begin
-  read(a);
-  read(b);
-  read(c);
-  read(d);
-  read(e);
-  read(f);
-  end;
-var a1, b1, c1, d1, e1, f1 : integer;
+var a,b,c,d,f,x,z : real;
 
-begin
- readln(a1,b1,c1,d1,e1,f1);
- Calcular(a1,b1,c1,d1,e1,f1);
+ begin
+  write('Digite quatro numeros reais: ');
+  readln(a);
+  readln(b);
+  readln(c);
+  readln(d);
+
+  x := (a + b) / (c - d) ;
+  writeln(x);
+  z := f / (a + b);
+  writeln(x + z);
 end.
 
 
