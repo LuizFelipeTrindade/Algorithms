@@ -16,11 +16,17 @@ begin
   
   read(d);
 
+if (a mod 2 = 1) or (b mod 2 = 1) or (c mod 2 = 1) or (d mod 2 = 1) then
+
+ writeln('NUMERO INVALIDO, FOI IDENTIFICADO UM NUMERO IMPAR, POR FAVOR DIGITE NOVAMENTE')
+
+else
+ begin
 
  while(i > 0) do
 
-  begin	 
-  
+  begin	
+
    write(a, ' ');
    
    a := a + 2;
@@ -50,7 +56,7 @@ begin
    writeln(d);
 
    i := 0;
-
+   end;
  end; 
 
 end.
