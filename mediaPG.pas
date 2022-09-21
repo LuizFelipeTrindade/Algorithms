@@ -13,9 +13,9 @@ begin
 
  b := a * c ;
   
- resultado:= sqrt(b);
+ resultado:= sqrt(b); //Tira a raiz do resultado da multiplicação da variavel b
 
- write(resultado:0:2);
+ write(resultado:0:2); //Resultado com 2 casas decimais(como pede o enunciado)
 
 
 end.
