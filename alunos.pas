@@ -9,7 +9,7 @@ begin
  write('Digite as duas notas do aluno: ');
  readln(nota1, nota2);
 
- media := (nota1 + nota2) / 2;
+ media := (nota1 + nota2) / 2; //Calculo da média dos alunos
 
   if media >= 7 then
 
