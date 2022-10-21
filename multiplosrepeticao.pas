@@ -12,7 +12,7 @@ begin
 
     if (num mod 7 = 0) and (num mod 2 = 1) then begin
 	 multiplo := num;
-	 writeln('Eh multiplo de 7 e <> 2: ', multiplo); //Imprime na tela se a condição for verdadeira
+	 writeln('Sao multiplo de 7 e <> 2: ', multiplo);
      end;
   end;
 end.
