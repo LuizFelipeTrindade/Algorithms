@@ -4,3 +4,8 @@
 *.pas~
 *.md~ 
 *.swp
+
+#Ignorar pastas
+
+*teste/
+*ignore/
