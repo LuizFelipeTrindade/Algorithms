@@ -5,7 +5,9 @@ var n ,num, i, soma : integer;
 
 
 begin
- 
+
+ write('Digite um valor maior que 0: ');
+
  readln(n);
 
  soma := 0;
