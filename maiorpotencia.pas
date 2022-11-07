@@ -1,24 +1,24 @@
 Program potencia;
 
 
-var a, b, c : integer;
-var pot, resultado: real;
+var a, b, aux: integer;
+var maiorpot: real;
 
 begin
 
-write('Digite um valor: ');
-readln(a);
+ write('Digite dois numeros inteiros positivos: ');
+ read(a);
 
-write('Agora digite a qual numero vc queira que ele fique elevado: ');
-readln(b);
+ write('Agora digite o valor que sera divisivel pela maior potencia do primeiro: ');
+ read(b);
 
-pot := exp(b * ln(a));
 
-write('Agora digite um numero divisivel pelo anterior: ');
-readln(c);
+ write('Numero de quantas vezes ele vai ser elevado: ');
+ read(aux);
+ 
+ maiorpot := exp(aux * ln(a));
 
-resultado := pot / c;
+ writeln(maiorpot:0:1);
 
-writeln(resultado:0:1);
 
 end.
