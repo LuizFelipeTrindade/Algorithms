@@ -1,35 +1,42 @@
-Program po;
+Program resp_popu;
 
-var Pa, Pb: integer;
-var Xa, Xb, Pfa, Pfb : real;
+var Pa, Pb, i: integer;
+var Xa, Xb, res1, res2: real;
 
 begin
 
- write('Digite o numero de habitantes da primeira cidade: ');
- read(Pa);
+ write('Digite a quantidade de habitantes das cidades:');
+ read(Pa,Pb);
 
- write('Digite o numero de habitantes da segunda cidade: ');
- read(Pb);
+ write('Digite as taxas percentuais de crescimento ano: ');
+ read(Xa,Xb);
 
- write('Digite o percuntal de crescimento da cidade 1 e 2, respectivamente: ');
- read(Xa, Xb);
+ res1:= Pa + Xa;
+ res2:= Pb + Xb;
 
- Pfa := Pa + Xa;
- Pfb := Pb + Xb;
+ i := 2009;
 
- if Pa > Pb then
-   writeln('Cidade 2 é a menor')
- else
-   writeln('Cidade 1 é a menor');
+   while res2 < res1 do begin
+    if res2 < res1 then begin
+    res2 := res2 + 1;
+    i := i + 1;
+    end;
+   end;
+
+   if res2 >= res1 then 
+   writeln('sim, em: ', i);
  
- 
- if Pfa > Pfb then
-   writeln('sim')
 
- else //Pfb > Pfa 
+  while res1 < res2 do begin
+   if res1 < res2 then begin
+   res1 := res1 + 1;
+   i := i + 1;
+   end;
+  end;
 
-   writeln('nao');
+  if res1 >= res2 then
+  writeln('sim, em: ', i);
 
-   
 
 end.
+
