@@ -1,29 +1,24 @@
 Program escadona_de_soma;
 
-var soma, i, n, sub : integer;
-
-var v : array [1 .. 81] of integer;
-
+var soma, i,  n : integer;
 
 begin
 
  i := 1;
 
  soma := 1;
- 
- sub := 0;
+
+ n := 1;
 
  while i <= 9 do begin
 
-  soma := soma + 1; 
-
-  sub := soma;
-
+  write(1);
   write(soma);
+  writeln(n);
 
-  sub := sub - 1;
-  
-  writeln(sub);
+  soma := soma + 1;
+
+  n := soma - 1;
 
   i := i + 1;
   end;
