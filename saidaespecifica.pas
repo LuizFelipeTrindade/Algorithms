@@ -1,25 +1,24 @@
-Program escadona_de_soma;
+Program segitigaAngka;
 
-var soma, i,  n : integer;
+var i,N,s: integer;
 
 begin
 
- i := 1;
+ write('Digite o numero de vezes que vc quer a repeticao:  ');
+ readln(N);
 
- soma := 1;
-
- n := 1;
-
- while i <= 9 do begin
-
-  write(1);
-  write(soma);
-  writeln(n);
-
-  soma := soma + 1;
-
-  n := soma - 1;
-
-  i := i + 1;
-  end;
+ if N <= 0 then begin
+   writeln('precisa ser < 0');
+ end
+ else begin 
+ for s:=i to N do begin
+ for i:=1 to s do begin
+   write(i);
+ end;
+ for i := s-1 downto 1 do 
+ begin
+   write(i);
+end;
+end;
+end;
 end.
