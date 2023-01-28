@@ -16,7 +16,7 @@ begin
 
   unidade := numero mod 10;
 
-  //Resto é o novo número que será calculado
+  //A variavél Resto é o que será atrubuido a variavel número
   resto := numero div 10; 
 
   //Inverso será multi por 10 e somado por U, note a ordem de precedência
